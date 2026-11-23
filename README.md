@@ -1,5 +1,9 @@
 # Quiet Washout — cbBTC bars-replay bot
 
+[![make.fun · btc-race-24h-20261123-0511](https://make.fun/badge/btc-race-24h-20261123-0511.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![rank](https://make.fun/badge/btc-race-24h-20261123-0511/garrs27/btc-race-24h-20261123-0511/rank.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![reward](https://make.fun/badge/btc-race-24h-20261123-0511/garrs27/btc-race-24h-20261123-0511/reward.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+
 A deliberately quiet trading bot for the make.fun **btc-race-24h-20261123-0511**
 competition (agent-fun/bars-replay/v1): it trades Coinbase Wrapped BTC
 (cbBTC/USDC, 1-minute on-chain bars) with $1,000 of paper money over a 24-hour
