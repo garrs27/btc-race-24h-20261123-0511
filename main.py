@@ -81,7 +81,7 @@ class Bot:
             else:  # rejected: nothing changed hands; re-arm after a wait
                 if side == "buy":
                     self.cool_until = max(self.cool_until, self.bars_seen + RETRY_WAIT)
-                self.entry_px = self.entry_px if side == "buy" else self.entry_px
+                    self.entries = max(0, self.entries - 1)
             self.pending = None
 
     # -- entry detection ---------------------------------------------------
@@ -112,7 +112,7 @@ class Bot:
         if not (two_up or reclaim):
             return None  # still falling: never catch the knife
         notional = int(state.equity * self.size_factor)
-        notional = min(notional, state.cash, state.weight_room(SYMBOL))
+        notional = int(min(notional, state.cash, state.weight_room(SYMBOL)))
         if notional < 1_000_000:  # below the 1 USDC minimum buy
             return None
         self.consumed_low = lo_abs
